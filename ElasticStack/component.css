@@ -1,0 +1,117 @@
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#Gallery{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.gallery{
+	padding-top: 20%;
+}
+.elasticstack {
+	position: relative;
+	padding: 0 0 0 0;
+	margin: 40px auto;
+	width: 56vw;
+	height: 45vw;
+	list-style: none;
+	-webkit-perspective: 1000px;
+	-webkit-perspective-origin: 50% 150%;
+	perspective: 1000px;
+	perspective-origin: 50% 150%;
+}
+
+.no-js .elasticstack {
+	max-width: 1090px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+.elasticstack li {
+	position: absolute;
+	z-index: 1;
+	width: 54vw;
+	margin: 1vw 1vw 1vw 1vw;
+	border-width: 3vw 2vw;
+	border-style: solid;
+	border-color: #fff;
+	background-color: white;
+	box-shadow: 0 10px 7px -7px rgba(0,0,0,0.12), 0 0 4px rgba(0,0,0,0.1);
+	opacity: 0;
+	cursor: pointer;
+	-webkit-transform: translate3d(0,0,-180px);
+	transform: translate3d(0,0,-180px);
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.no-js .elasticstack li {
+	position: relative;
+	display: inline-block;
+	opacity: 1;
+	margin: 10px;
+	cursor: default;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.elasticstack li img {
+	max-width: 50vw;
+	display: block;
+}
+
+.elasticstack li h5 {
+	margin: 0 5px;
+	color: #143f51;
+	background-color: white;
+	height: 60px;
+	text-align: right;
+	font-size: 1.4em;
+	font-family: "Sacramento", cursive;
+	line-height: 60px;
+}
+
+.elasticstack li.animate {
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.elasticstack li.move-back {
+	/* http://matthewlein.com/ceaser/ */
+	-webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.470, 1); /* older webkit */
+	-webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.470, 1.515);
+	transition-timing-function: cubic-bezier(0.175, 0.885, 0.470, 1.515);
+}
+@media screen and (max-width: 765px){
+	#Gallery{
+		padding-bottom: 0;
+	}
+	#photo-stack{
+		padding: 2vw 0 0 0 ;
+		margin: 0 0 0 0;
+	}
+	#elasticstack{
+		margin: 2px auto 0 auto;
+		padding: 5px 0 0 0;
+		text-align: center;
+		height: 95vw;
+		width: 100vw;
+	}
+	#elasticstack li{
+		width:96vw;
+		margin-left: 2vw;
+		padding: 0 0 0 0 ;
+		border-left-width: 3vw;
+		border-right-width: 3vw;
+	}
+	.elasticstack li img{
+		margin: 0 0 0 0;
+		max-width: 90vw;
+		max-height: 90vw;
+	}
+}
