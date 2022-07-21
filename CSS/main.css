@@ -36,7 +36,11 @@ i {
     content: "\f003";
 }
 .h5i-phone:before {
+    position: relative;
+    right: 4px;
+    top: 1.95px;
     content: "\f095";
+
 }
 
 
