@@ -386,20 +386,35 @@ nav ul li ul li a {
     align-items: center;
     justify-content: center;
 }
-
+.oldteams ul{
+    margin-right: 41px;
+}
 .oldteams ul li{
     list-style: none;
     font-size: 1.3rem;
-    margin: 5px 5px;
+    margin: 9px 5px;
 }
 .oldteams ul li a{
     text-decoration: none;
     color: white;
-    padding: 7px 23px;
+    padding: 8px 25px;
     border-radius: 20px;
 }
 
 .oldteams ul li a:hover{
+    color: cyan;
+    background-color: black;
+}
+
+#btn{
+    padding: 7px 40px;
+    font-size: 21px;
+    color: white;
+    background: none;
+    border: none;
+    border-radius: 20px;
+}
+#btn:hover{
     color: cyan;
     background-color: black;
 }
