@@ -36,7 +36,11 @@ i {
     content: "\f003";
 }
 .h5i-phone:before {
+    position: relative;
+    right: 4px;
+    top: 1.95px;
     content: "\f095";
+
 }
 
 
@@ -349,6 +353,70 @@ nav ul li ul li a {
     100% {
         background-position: 0% 50%
     }
+}
+
+.oldteams{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.oldteams ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    margin: 5px 5px;
+}
+.oldteams ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 7px 23px;
+    border-radius: 20px;
+}
+
+.oldteams ul li a:hover{
+    color: cyan;
+    background-color: black;
+}
+
+
+.oldteams{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.oldteams ul{
+    margin-right: 41px;
+}
+.oldteams ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    margin: 9px 5px;
+}
+.oldteams ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    border-radius: 20px;
+}
+
+.oldteams ul li a:hover{
+    color: cyan;
+    background-color: black;
+}
+
+#btn{
+    padding: 7px 40px;
+    font-size: 21px;
+    color: white;
+    background: none;
+    border: none;
+    border-radius: 20px;
+}
+#btn:hover{
+    color: cyan;
+    background-color: black;
 }
 
 
